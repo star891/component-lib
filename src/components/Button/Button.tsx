@@ -1,11 +1,12 @@
 import React from "react";
+import "./Button.scss";
 
 export interface ButtonProps {
   label: string;
 }
 
 const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
+  return <button className={"button"} onClick={() => console.log("Click Event!!!")}>{props.label}</button>;
 };
 
 export default Button;
