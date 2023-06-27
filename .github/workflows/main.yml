@@ -35,4 +35,4 @@ jobs:
           aws sts get-caller-identity
       - name: Copy files to the production website with the AWS CLI
         run: |
-          aws s3 cp ./assets s3://web-assets-star891
+          aws s3 cp ./assets/* s3://web-assets-star891
